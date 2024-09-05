@@ -18,8 +18,9 @@
     }],
     "grammars": [{
       "language": "cosmos",
-      "scopeName": "",
+      "scopeName": "source.cosmos",
       "path": "./syntaxes/cosmos.tmLanguage.json"
     }]
   }
+  
 }
