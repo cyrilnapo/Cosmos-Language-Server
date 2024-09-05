@@ -1,0 +1,25 @@
+{
+  "name": "cosmoslanguage",
+  "displayName": "CosmosLanguage",
+  "description": "Addon that handles cosmos language syntax and colors",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cosmos",
+      "aliases": ["Cosmos", "cosmos"],
+      "extensions": [".cosmos"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cosmos",
+      "scopeName": "",
+      "path": "./syntaxes/cosmos.tmLanguage.json"
+    }]
+  }
+}
