@@ -1,7 +1,7 @@
 {
   "name": "cosmoslanguage",
-  "displayName": "CosmosLanguage",
-  "description": "Addon that handles cosmos language syntax and colors",
+  "displayName": "Cosmos 🌌",
+  "description": "Support de language pour Cosmos",
   "icon": "icon/cosmos.png",
   "version": "0.0.1",
   "engines": {
