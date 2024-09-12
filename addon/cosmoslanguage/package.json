@@ -2,6 +2,7 @@
   "name": "cosmoslanguage",
   "displayName": "CosmosLanguage",
   "description": "Addon that handles cosmos language syntax and colors",
+  "icon": "icon/cosmos.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.92.0"
