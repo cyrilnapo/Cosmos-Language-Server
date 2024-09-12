@@ -10,13 +10,22 @@
 		},
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#functions"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cosmos",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(Si|si|alors|Répéter|sinon|et sinon)\\b"
 			}]
 		},
 		"strings": {
@@ -27,6 +36,9 @@
 				{
 					"name": "constant.character.escape.cosmos",
 					"match": "\\\\."
+				},
+				{
+					"include": "#variables"
 				}
 			]
 		},
@@ -40,6 +52,30 @@
 							"name": "comment"
 						}
 					}
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.other.cosmos",
+					"match": "#[a-zA-Z_][a-zA-Z0-9_]*"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.cosmos",
+					"match": "\\b\\d+\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "support.function.cosmos",
+					"match": "\\b(Afficher le texte|Afficher le nombre|Placer le curseur à la ligne|Placer le curseur à la colonne|Effacer l'écran|Récupérer la saisie et la stocker dans la zone mémoire nommée|Récupérer la saisie et la stocker dans|Attendre la prochaine touche et la stocker dans|Allouer une zone mémoire nommée|Créer une zone mémoire|Allouer|Afficher)\\b"
 				}
 			]
 		}
