@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -26,7 +29,20 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.cosmos",
+					"match": "//.*",
+					"captures": {
+						"0": {
+							"name": "comment"
+						}
+					}
+				}
+			]
 		}
 	},
-	"scopeName": ""
+	"scopeName": "source.cosmos"
 }
